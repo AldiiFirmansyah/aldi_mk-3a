@@ -1,8 +1,8 @@
 document.getElementById('loginform').addEventListener('submit', function(event){
     event.preventDefault();
 
-    const correctUsername = 'Davin';
-    const correctPassword = 'admin123';
+    const correctUsername = 'aldi';
+    const correctPassword = '123';
 
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -13,4 +13,4 @@ document.getElementById('loginform').addEventListener('submit', function(event){
     }else{
         alert ('Login Gagal');
     }
-})
+});

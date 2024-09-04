@@ -1,8 +1,6 @@
-/* index.css */
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #02337c, #fffb00);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,44 +9,56 @@ body {
 }
 
 form#loginform {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    backdrop-filter: blur(10px);
 }
 
 form#loginform div {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: px;
+    font-weight: 600;
+    color: #333;
 }
 
 input[type="text"],
 input[type="password"] {
     width: calc(100% - 20px);
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    padding: 10px 12px;
+    border: 2px solid #a09a9a;
+    border-radius: 12px;
     box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #f093fb;
+    outline: none;
 }
 
 button[type="submit"] {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     border: none;
-    background-color: #837005;
-    color: rgb(255, 238, 0);
-    font-size: 16px;
-    border-radius: 4px;
+    background: linear-gradient(135deg, #fffb00, #d80a25);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #8a7e10;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(245, 87, 108, 0.4);
 }
